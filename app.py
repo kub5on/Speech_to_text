@@ -4,8 +4,6 @@ import openai
 from pathlib import Path
 import os
 
-st.set_option('server.maxUploadSize', 4096)  # 4 GB
-
 # Ustaw klucz OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
 

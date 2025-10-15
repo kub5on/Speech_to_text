@@ -5,7 +5,7 @@ from pathlib import Path
 import os
 
 # Ustaw klucz OpenAI
-openai.api_key = st.secrets("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 col1, col2 = st.columns([1, 3])  # proporcje szerokości
 with col1:
@@ -76,4 +76,3 @@ if uploaded_file is not None:
 
     # Usunięcie pliku wejściowego po zakończeniu transkrypcji
     os.remove(input_file)
-    os.remove(uploaded_file)
